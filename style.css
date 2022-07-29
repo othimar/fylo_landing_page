@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-blue: hsl(224, 93%, 58%);
+}
+
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: hsl(243, 87%, 12%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 80px 0;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header-nav-link {
+    text-decoration: none;
+    margin-right: 60px;
+    color: black;
+}
+
+.header-nav-link:hover,
+.footer-nav-link:hover {
+    color: var(--bright-blue);
+}
+
+.header nav ul li:last-child .header-nav-link {
+    margin-right: 0;
+}
+
+
+
+.two-columns {
+    display: flex;
+    margin-top: 175px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.two-columns h1 {
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.8em;
+}
+
+.two-columns>.left>p {
+    max-width: 75%;
+}
+
+.illustration {
+    max-width: 100%;
+}
+
+.form-email {
+    display: flex;
+    margin-top: 32px;
+}
+
+.form-email input,
+.form-early-access input {
+    width: 320px;
+    height: 3em;
+    padding-left: 14px;
+    color: hsl(238, 22%, 44%);
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.form-email input:focus:invalid,
+.form-early-access input:focus:invalid {
+    box-shadow: 0 0 5px red;
+    outline: none;
+    border: none;
+}
+
+.form-email input:invalid::after,
+.form-early-access input::after:invalid {
+    content: "Please check your email";
+    display: block;
+}
+
+.form-email button {
+    display: block;
+    margin-left: 14px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    border: none;
+    border-radius: 3px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: 700;
+}
+
+.form-email button:active,
+.form-early-access button:active {
+    background-color: hsl(224, 91%, 69%);
+}
+
+.two-columns p {
+    margin: 20px 0;
+}
+
+.link-see-how {
+    text-decoration: underline;
+    color: hsl(170, 45%, 43%);
+    font-size: 17px;
+}
+
+.link-see-how:hover {
+    text-shadow: 0 0 4px rgba(60, 159, 143, 0.815);
+}
+
+.card {
+    background-color: white;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.151);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 4px;
+    max-width: 60%;
+    padding: 1.5em;
+    margin-top: 35px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+
+}
+
+.card p::before {
+    content: url("./images/icon-quotes.svg");
+    display: block;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile-photo {
+    display: block;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.profile .name {
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.profile .job {
+    color: hsl(238, 22%, 44%);
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.early-access {
+    background-color: hsl(238, 22%, 44%);
+    width: 100%;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 100px 74px;
+}
+
+.early-access h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: larger;
+}
+
+.early-access p {
+    width: 53%;
+}
+
+.form-early-access button {
+    border: none;
+    border-radius: 3px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: 700;
+
+    display: block;
+    padding: 14px 40px;
+    margin-top: 20px;
+}
+
+.form-early-access input {
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+    ;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 80px 65px;
+    color: white;
+}
+
+footer .top {
+    display: flex;
+}
+
+footer .top .left,
+footer .top .middle,
+footer .top .right {
+    width: 33%
+}
+
+.white-logo {
+    filter: brightness(1%) invert(100%);
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 6px;
+}
+
+.footer-nav-link:hover {
+    color: hsl(238, 22%, 44%);
+}
+
+.social-networks {
+    display: flex;
+}
+
+.social-networks img {
+    height: 32px;
+    width: 32px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    filter: invert();
+}
+
+.social-icon:hover {
+    filter: none;
+}
+
+.facebook-icon {
+    background-image: url('./icons/facebook.svg');
+    background-position: center;
+
+}
+
+.facebook-icon:hover {
+    background-image: url('./icons/facebook-active.svg');
+}
+
+.instagram-icon {
+    background-image: url('./icons/instagram.svg');
+    background-position: center;
+    margin: 0 14px;
+
+}
+
+.instagram-icon:hover {
+    background-image: url('./icons/instagram-active.svg');
+}
+
+.whatsapp-icon {
+    background-image: url('./icons/whatsapp.svg');
+    background-position: center;
+
+}
+
+.whatsapp-icon:hover {
+    background-image: url('./icons/whatsapp-active.svg');
+}
+
+@media (max-width:800px) {
+    .two-columns {
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .form-email {
+        flex-direction: column;
+    }
+
+    .two-columns p {
+        width: 100%;
+    }
+
+    .form-email input,
+    .form-early-access input {
+        width: 100%;
+    }
+
+    .form-email button,
+    .form-early-access button {
+        margin: 0;
+        height: 3em;
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .two-columns .left p {
+        max-width: 100%;
+    }
+
+    .link-see-how {
+        display: block;
+        text-align: center;
+    }
+
+    .card {
+        margin: auto;
+    }
+
+    .card p {
+        max-width: 100%;
+    }
+
+    .early-access {
+        flex-direction: column;
+    }
+
+    footer .top {
+        flex-direction: column;
+    }
+
+    footer .top .left,
+    footer .top .middle,
+    footer .top .right,
+    .social-networks{
+        width: 100%;
+    }
+    .footer-nav-link{
+        padding: 6px 0;
+    }
+    .social-networks{
+        justify-content: center;
+    }
+}
