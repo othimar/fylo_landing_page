@@ -50,7 +50,7 @@ body {
     margin-right: 80px;
 }
 
-.two-columns h1 {
+.two-columns h2 {
     color: hsl(243, 87%, 12%);
     font-family: 'Raleway';
     font-weight: 700;
@@ -183,7 +183,7 @@ body {
     padding: 100px 74px;
 }
 
-.early-access h1 {
+.early-access h2 {
     color: white;
     font-size: 25px;
     font-weight: larger;
@@ -227,7 +227,8 @@ footer .top {
 footer .top .left,
 footer .top .middle,
 footer .top .right {
-    width: 33%
+    width: 25%;
+    align-content: center;
 }
 
 .white-logo {
@@ -253,51 +254,14 @@ footer ul {
     display: flex;
 }
 
-.social-networks img {
-    height: 32px;
-    width: 32px;
-}
 
-.social-icon {
-    width: 32px;
-    height: 32px;
-    background-size: contain;
-    filter: invert();
-}
 
-.social-icon:hover {
+a .social-icon{
+    margin: 0 8px;
+    filter: brightness(0%) invert();
+}
+a:hover .social-icon{
     filter: none;
-}
-
-.facebook-icon {
-    background-image: url('./icons/facebook.svg');
-    background-position: center;
-
-}
-
-.facebook-icon:hover {
-    background-image: url('./icons/facebook-active.svg');
-}
-
-.instagram-icon {
-    background-image: url('./icons/instagram.svg');
-    background-position: center;
-    margin: 0 14px;
-
-}
-
-.instagram-icon:hover {
-    background-image: url('./icons/instagram-active.svg');
-}
-
-.whatsapp-icon {
-    background-image: url('./icons/whatsapp.svg');
-    background-position: center;
-
-}
-
-.whatsapp-icon:hover {
-    background-image: url('./icons/whatsapp-active.svg');
 }
 
 @media (max-width:800px) {
@@ -305,7 +269,7 @@ footer ul {
         flex-direction: column-reverse;
     }
 
-    h1 {
+    h2 {
         text-align: center;
     }
 
